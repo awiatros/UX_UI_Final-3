@@ -1,23 +1,97 @@
 /*Global*/
-.container-fluid {
-    padding: 0 20px;
-    margin-top: 16px;
+.dash-main {
+    padding: 0px;
+    background-color: black;
+}
+
+.page-title {
+    color: white;
+    font: 48px "Helvetica", sans-serif;
+    font-weight: bold;
+}
+
+.body {
+    color: white;
+    font: 16px "Helvetica", sans-serif
+}
+
+.body-m {
+    color: white;
+    font: 14px "Helvetica", sans-serif;
+    font-weight: bold;
+}
+
+.body-m-blk {
+    font: 14px "Helvetica", sans-serif;
+    font-weight: bold;
+}
+
+.row {
+    border-style: none !important;
+}
+
+.body-sm {
+    color: white;
+    font: 12px "Helvetica", sans-serif;
+    font-weight: 600;
+}
+
+.body-sm-blk {
+    font: 12px "Helvetica", sans-serif;
+    font-weight: 600;
+}
+
+.cal-subhead {
+    color: white;
+    font: 16px "Helvetica", sans-serif;
+    font-weight: bold;
+}
+
+.right-subhead {
+    font: 20px "Hevletica", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font: bold 30px "Helvetica", sans-serif
+}
+
+h2 {
+    color: white;
+    font: bold 30px "Helvetica", sans-serif
 }
 
 .icon {
     height: 30px;
-    width: 25%;
-    border: 1px solid black;
+    width: auto;
+}
+
+.icon-sm {
+    height: 15px;
+    width: auto;
+}
+
+.icon-sm:hover {
+    cursor: pointer;
 }
 
 button {
-    height: 30px;
+    border-radius: 6px;
+    font-size: 12px;
 }
 
 /*Mobile Nav*/
+
 .mobile-nav {
     padding: 8px 0px;
+    background-color: #2E2E2E !important;
+    right: 0px !important;
+    width: 100%;
+    margin: 0px;
 }
+
 .nav-subhead {
     border: 1px solid black;
     padding: 8px 0;
@@ -35,16 +109,67 @@ button {
 
 /*Left Nav*/
 
+.sidebar-link {
+    color: white;
+    font: bold 12px "Helvetica", sans-serif
+}
+
+.sidebar-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-tool {
+    color: #9D9C9C;
+    font: bold 12px "Helvetica", sans-serif
+}
+
+.sidebar-tool:hover {
+    color: #9D9C9C;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #414343;
+    cursor: pointer;
+}
+
+.current-page {
+    background-color: #4E5052;
+    padding: 0;
+}
+
+.dash-bar {
+    padding: 8px 16px;
+}
+
+.nav-tag {
+    width: 16px;
+    height: 40px;
+    background-color: #0086CF;
+    padding: 0px 12px;
+}
+
+.side-nav {
+    background-color: #2E2E2E;
+    min-height: 100%;
+}
+
 .nav-header {
     padding: 0.5rem 1rem;
 }
 
-.nav-link {
-    border: 1px solid black;
+.nav-link:hover {
+    cursor: pointer;
 }
 
 .spacer-nav {
-    height: 38.5vh;
+    height: 51vh;
+}
+
+.side-icon {
+    height: 24px;
+    width: auto;
 }
 
 /*Center Content*/
@@ -72,12 +197,21 @@ button {
 }
 
 /*Right Sidebar*/
-.col-icon {
-    width: 48px;
+.right-sidebar {
+    background-color: #2E2E2E;
 }
 
 .icon {
     width: 48px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.profile {
+    height: 48px;
+    width: auto;
 }
 
 .search {
