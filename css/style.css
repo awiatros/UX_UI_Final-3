@@ -159,10 +159,6 @@ button {
   padding: 0.5rem 1rem;
 }
 
-.nav-link:hover {
-  cursor: pointer;
-}
-
 .spacer-nav {
   height: 51vh;
 }
@@ -280,19 +276,26 @@ button {
   text-decoration: none;
 }
 
-.flag:before {
-  content: url("/images/flag-open.svg");
-  display: block;
-  width: 100px;
-  height: 100px;
+.flag {
+  width: 0;
+  height: 0;
+  margin: 0;
+  border: 0 none;
+  padding: 0;
 }
 
-.flag:checked:before {
-  content: url("images/another-icon.png");
+input.flag:before {
+  content: url('../images/flag-open.svg');
+  display: block;
+  transform: scale(0.35, 0.47);
+}
+
+input[type="checkbox"]:checked:before {
+  content: url('../images/flag-full.svg');
 }
 
 .vert-elipses {
-  height: 30px;
+  height: 20px;
 }
 
 .vert-elipses:hover {
