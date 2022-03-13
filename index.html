@@ -22,14 +22,16 @@
     </button>
     <div class="pl-5">
       <a class="navbar-brand" href="#">
-        <img src="images/logo.svg" width=auto height="40" class="d-inline-block align-top" alt="text image displaying 'the Depot'">
+        <img src="images/logo.svg" width=auto height="40" class="d-inline-block align-top"
+          alt="text image displaying 'the Depot'">
       </a>
     </div>
     <div>
       <div class="row right-icons d-flex justify-content-between">
         <img src="images/alert.svg" class="icon py-auto my-auto pr-4 mr-4" alt="bell with red dot in top right">
         <img src="images/profile.png" class="profile py-auto my-auto" alt="round image of smiling woman">
-        <img src="images/chev-down.svg" class="icon-sm chev-down py-auto my-auto mr-4 ml-3" alt="downard-pointing chevron">
+        <img src="images/chev-down.svg" class="icon-sm chev-down py-auto my-auto mr-4 ml-3"
+          alt="downard-pointing chevron">
       </div>
     </div>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -67,33 +69,36 @@
   <!--Main-->
   <div class="row dash-main">
     <!--Side Nav-->
-    <div class="col-lg-2 col-md-2 d-none d-lg-block h-100 side-nav">
-      <nav class="navbar pl-0">
-        <div class="navbar-brand pl-0 mx-auto my-2">
-          <img src="images/logo.svg" width=120 class="d-inline-block align-top" alt="The Depot">
-        </div>
-      </nav>
-      <div class="nav-set">
-        <div class="row current-page d-flex">
-          <div class="nav-tag"></div>
-          <a class="sidebar-link dash-bar ml-3" href="#"><img src="images/dash-icon.svg"
-              alt="blue circle with house icon" class="side-icon pr-3">Dashboard</a>
-        </div>
-        <div class="row nav-link pl-5">
-          <a class="sidebar-link pl-2" href="#"><img src="images/cal-icon.svg" alt="red circle with calendar icon"
-              class="side-icon pr-3">Calendar</a>
-        </div>
-        <div class="row nav-link pl-5">
-          <a class="sidebar-link pl-2" href="#"><img src="images/homework.svg" alt="yellow circle with paper icon"
-              class="side-icon pr-3">Homework</a>
-        </div>
-        <div class="row nav-link pl-5">
-          <a class="sidebar-link pl-2" href="#"><img src="images/resources.svg" alt="orange circle with folder icon"
-              class="side-icon pr-3">Resources</a>
-        </div>
-        <div class="row nav-link pl-5">
-          <a class="sidebar-link pl-2" href="#"><img src="images/career.svg" alt="globe icon" class="side-icon pr-3">Career
-            Services</a>
+    <div class="col-lg-2 col-md-2 d-none d-lg-flex flex-column justify-content-between side-nav">
+      <div class="d-flex flex-column">
+        <nav class="navbar pl-0">
+          <div class="navbar-brand pl-0 mx-auto my-2">
+            <img src="images/logo.svg" width=120 class="d-inline-block align-top" alt="The Depot">
+          </div>
+        </nav>
+        <div class="nav-set">
+          <div class="row current-page d-flex">
+            <div class="nav-tag"></div>
+            <a class="sidebar-link dash-bar ml-3" href="#"><img src="images/dash-icon.svg"
+                alt="blue circle with house icon" class="side-icon pr-3">Dashboard</a>
+          </div>
+          <div class="row nav-link pl-5">
+            <a class="sidebar-link pl-2" href="#"><img src="images/cal-icon.svg" alt="red circle with calendar icon"
+                class="side-icon pr-3">Calendar</a>
+          </div>
+          <div class="row nav-link pl-5">
+            <a class="sidebar-link pl-2" href="#"><img src="images/homework.svg" alt="yellow circle with paper icon"
+                class="side-icon pr-3">Homework</a>
+          </div>
+          <div class="row nav-link pl-5">
+            <a class="sidebar-link pl-2" href="#"><img src="images/resources.svg" alt="orange circle with folder icon"
+                class="side-icon pr-3">Resources</a>
+          </div>
+          <div class="row nav-link pl-5">
+            <a class="sidebar-link pl-2" href="#"><img src="images/career.svg" alt="globe icon"
+                class="side-icon pr-3">Career
+              Services</a>
+          </div>
         </div>
         <div class="spacer-nav"></div>
       </div>
@@ -118,626 +123,1180 @@
         </div>
       </div>
     </div>
-      <!--Center Content-->
-      <div class="col-lg-7 col-md-7 h-100 main-content">
-        <ul class="nav nav-fill nav-tabs mt-5" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="suggested-tab" data-toggle="tab" href="#suggested" role="tab" aria-controls="suggested" aria-selected="true">Suggested</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="library-tab" data-toggle="tab" href="#library" role="tab" aria-controls="library" aria-selected="false">My Library</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="course-tab" data-toggle="tab" href="#course" role="tab" aria-controls="course" aria-selected="false">Course Materials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="shared-tab" data-toggle="tab" href="#shared" role="tab" aria-controls="shared" aria-selected="false">Shared Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Video Library</a>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="suggested" role="tabpanel" aria-labelledby="suggested-tab">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Link</th>
-                  <th scope="col">Save</th>
-                  <th scope="col">Download</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row">Suggested 1</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="row ml-1 mr-1">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row ml-1 mr-1 mt-4">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="library" role="tabpanel" aria-labelledby="library-tab">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Link</th>
-                  <th scope="col">Save</th>
-                  <th scope="col">Download</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row">Library 1</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="row ml-1 mr-1">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row ml-1 mr-1 mt-4">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="course" role="tabpanel" aria-labelledby="course-tab">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Link</th>
-                  <th scope="col">Save</th>
-                  <th scope="col">Download</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row">Course 1</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="row ml-1 mr-1">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row ml-1 mr-1 mt-4">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="shared" role="tabpanel" aria-labelledby="shared-tab">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Link</th>
-                  <th scope="col">Save</th>
-                  <th scope="col">Download</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row">Shared 1</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="row ml-1 mr-1">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row ml-1 mr-1 mt-4">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Link</th>
-                  <th scope="col">Save</th>
-                  <th scope="col">Download</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row">Video 1</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-                <tr>
-                  <td scope="row">Title</td>
-                  <td>Description</td>
-                  <td>URL</td>
-                  <td>Save</td>
-                  <td>Download</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="row ml-1 mr-1">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row ml-1 mr-1 mt-4">
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card resource-card">
-                  <img src="..." class="card-img-top ml-1 mt-1" alt="...">
-                  <div class="row mt-auto ml-1 mr-2 justify-content-between">
-                    <p class="card-title">Title</p>
-                    <img src="...">
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!--Center Content-->
+    <div class="col-lg-7 col-md-7 h-100 px-5 main-content">
+      <p class="page-title p-3 mb-5">Resources</p>
+      <div class="row d-flex pl-3 mb-3">
+        <div class="input-group search-resources d-flex py-1 mb-4">
+          <img src="images/search.svg" alt="magnifying glass" class="icon-m">
+          <input class="search" type="search" placeholder="Search for courses, resources, and users"
+            aria-label="Search">
+        </div>
+        <div>
+          <div class="row filter-drop advanced-search">
+            <select class="filter-brand">
+              <option value="0" selected>Advanced Search Filters</option>
+              <option value="type">Type</option>
+              <option value="session">Session</option>
+              <option value="topic">Topic</option>
+            </select>
           </div>
         </div>
       </div>
-      <!--Right Sidebar-->
-      <div class="col-lg-3 col-md-3 h-100 right-sidebar px-5">
-        <div class="row right-icons mb-5 mt-4 mr-3 d-none d-xl-flex justify-content-between">
-          <img src="images/alert.svg" class="icon py-auto my-auto pr-4 ml-4 mr-4" alt="bell with red dot in top right">
-          <img src="images/profile.png" class="profile py-auto my-auto" alt="round image of smiling woman">
-          <p class="cal-subhead py-auto my-auto">Joan Gingham</p>
-          <img src="images/chev-down.svg" class="icon-sm chev-down py-auto my-auto mr-4" alt="downard-pointing chevron">
-        </div>
-        <p class="ml-0 mb-5 mt-auto right-subhead">New Search</p>
-        <p class="cal-subhead pt-4">Type</p>
-        <div class="row">
-          <div class="col filter-checks mx-0">
-            <div class="row d-flex flex-column reminder-list mx-4 p-3">
-              <div class="row mb-2 d-flex">
-                <label class="container body-m">
-                  <input type="checkbox">
-                  <span class="checkmark  pr-2"></span>
-                  video
-                </label>
-              </div>
-              <div class="row mb-2 d-flex">
-                <label class="container body-m">
-                  <input type="checkbox">
-                  <span class="checkmark pr-2"></span>
-                  link
-                </label>
-              </div>
-              <div class="row mb-2 d-flex">
-                <label class="container body-m">
-                  <input type="checkbox">
-                  <span class="checkmark pr-2"></span>
-                  .doc/.dox
-                </label>
-              </div>
-           </div>
-          </div>
-          <div class="col filter-checks mx-0">
-            <div class="row d-flex flex-column reminder-list mx-4 p-3">
-              <div class="row mb-2 d-flex">
-                <label class="container body-m">
-                  <input type="checkbox">
-                  <span class="checkmark  pr-2"></span>
-                  slides
-                </label>
-              </div>
-              <div class="row mb-2 d-flex">
-                <label class="container body-m">
-                  <input type="checkbox">
-                  <span class="checkmark pr-2"></span>
-                  .pdf
-                </label>
-              </div>
-              <div class="row mb-2 d-flex">
-                <label class="container body-m">
-                  <input type="checkbox">
-                  <span class="checkmark pr-2"></span>
-                  template
-                </label>
-              </div>
-           </div>
-          </div>
-        </div>
-        <div class="row pl-1">
+      <ul class="nav nav-pills nav-fill nav-tabs pl-2 pb-1" id="myTab" role="tablist">
+        <li class="nav-item tab-style px-1">
+          <a class="nav-link active" id="suggested-tab" data-toggle="tab" href="#suggested"><img
+              src="images/RecommendedTAB.svg" width="120px"></a>
+        </li>
+        <li class="nav-item tab-style px-1">
+          <a class="nav-link" id="library-tab" data-toggle="tab" href="#library"><img src="images/MyLibraryTAB.svg"
+              width="120px"></a>
+        </li>
+        <li class="nav-item tab-style px-1">
+          <a class="nav-link" id="course-tab" data-toggle="tab" href="#course"><img src="images/CourseMaterialsTAB.svg"
+              width="120px"></a>
+        </li>
+        <li class="nav-item tab-style px-1">
+          <a class="nav-link" id="shared-tab" data-toggle="tab" href="#shared"><img src="images/SharedResourcesTAB.svg"
+              width="120px"></a>
+        </li>
+        <li class="nav-item tab-style px-1">
+          <a class="nav-link" id="add-tab" data-toggle="tab" href="#add"><img src="images/VideoLibraryTAB.svg"
+              width="120px"></a>
+        </li>
+      </ul>
 
-          <div class="input-group">
-            <input class="search" type="search" placeholder="Search" aria-label="Search">
-            <button>Search</button>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- Suggested -->
+        <div class="tab-pane container active" id="suggested">
+          <div class="row d-flex justify-content-between pl-5 pb-4">
+            <p class="right-subhead pt-5">Recommended for You</p>
+            <div class="sort-filter d-flex">
+              <p class="body-m mt-2 pt-5 pr-5">Sort by:</p>
+              <div class="row filter-drop mt-5 mr-4">
+                <select class="filter-brand">
+                  <option value="0">Newest</option>
+                  <option value="most-saved">Most Saved</option>
+                  <option value="most-viewed">Most Viewed</option>
+                  <option value="recently-added">Recently Added</option>
+                  <option value="a-z">Alphabetical A - Z</option>
+                  <option value="z-a">Alphabetical Z - A</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row res-item pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/res-1.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5">
+              <p class="cal-subhead pb-5">Figma Tutorial: Prototyping</p>
+              <div class="row d-flex mt-4">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/kelsea.png" class="contributor-img mx-3" alt="profile picture of smiling woman">
+                <a href="" class="contributor-link my-auto">Kelsea Davis</a>
+              </div>
+              <p class="res-specs">4m video</p>
+            </div>
+            <div class="col-1 d-flex justify-content-end">
+              <input type="checkbox" class="icon flag mr-2 mb-5">
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
+          <hr>
+          <div class="row res-item pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/sugg-2.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5 pr-5">
+              <p class="cal-subhead pb-4">Prototype While You Design,<br> and Vice Versa</p>
+              <div class="row d-flex mt-4">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/person.png" class="contributor-img mx-3" alt="white person icon on blue background">
+                <a href="" class="contributor-link my-auto">Justin Fogel</a>
+              </div>
+              <p class="res-specs">7m read</p>
+            </div>
+            <div class="col-1 ml-5 d-flex justify-content-end">
+              <input type="checkbox" class="icon flag mr-2 mb-5">
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
+          <hr>
+          <div class="row res-item pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/sugg-3.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5">
+              <p class="cal-subhead pb-4">Responsible Web Design: Creating<br> Flexible Websites</p>
+              <div class="row d-flex mt-4">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/adam.png" class="contributor-img mx-3" alt="profile picture of man on scooter">
+                <a href="" class="contributor-link my-auto">Adam Wiatros</a>
+              </div>
+              <p class="res-specs">4m Video</p>
+            </div>
+            <div class="col-1 d-flex justify-content-end">
+
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
+          <hr>
+          <div class="row pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/sugg-4.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5">
+              <p class="cal-subhead pb-3">Figma Basics<br> and UI/UX Design</p>
+              <div class="row d-flex mt-4">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/ben.png" class="contributor-img mx-3" alt="profile picture of man eating sandwich">
+                <a href="" class="contributor-link my-auto">Ben Hait</a>
+              </div>
+              <p class="res-specs">4m Video</p>
+            </div>
+            <div class="col-1 d-flex justify-content-end">
+
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
           </div>
         </div>
-        <div class="row pl-1 mt-5">
-          <p class="ml-0 mt-auto">Filters</p>
+        <!--Library-->
+        <div class="tab-pane container fade" id="library">
+          <div class="row d-flex justify-content-between pl-5">
+            <p class="right-subhead pt-5 pr-5 mr-3">Your Saved Resources</p>
+            <p class="body-m pt-5 pl-5 ml-5 switchbox">Most Recent</p>
+            <div class="row switchbox pt-4 mt-1 pl-5">
+              <div class="row filter-toggle">
+                <label class="switch mt-2">
+                  <input type="checkbox">
+                  <span class="slider round slide-green"></span>
+                </label>
+              </div>
+            </div>
+            <p class="body-m pt-5 pr-4">Alphabetical</p>
+          </div>
+          <div class="row res-item pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/res-1.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5">
+              <div class="row d-flex">
+                <p class="body-sm-blk px-2 py-1 ml-2 mr-1 rsc-tag">#Figma</p>
+                <p class="body-sm-blk px-2 py-1 ml-2 mr-1 rsc-tag">#Prototyping</p>
+              </div>
+              <p class="cal-subhead pb-2">Figma Tutorial: Prototyping</p>
+              <div class="row d-flex mt-4 pb-2">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/kelsea.png" class="contributor-img mx-3" alt="profile picture of smiling woman">
+                <a href="" class="contributor-link my-auto">Kelsea Davis</a>
+              </div>
+              <p class="res-specs">4m video</p>
+            </div>
+            <div class="col-1 d-flex justify-content-end card-tools">
+              <input type="checkbox" class="icon flag mr-3 mb-5">
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
+          <hr>
+          <div class="row res-item pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/figma-101.png" class="resource-img pb-4" alt="man pictured next to figma logo">
+            </div>
+            <div class="col ml-5 pl-5 pr-5">
+              <div class="row d-flex">
+                <p class="body-sm-blk px-2 py-1 ml-2 mr-1 rsc-tag">#Figma</p>
+              </div>
+              <p class="cal-subhead pb-2">Figma 101</p>
+              <div class="row d-flex mt-3 pb-2">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/matt.png" class="contributor-img mx-3" alt="white person icon on blue background">
+                <a href="" class="contributor-link my-auto">Matt Lane</a>
+              </div>
+              <p class="res-specs">17m video</p>
+            </div>
+            <div class="col-1 ml-5 d-flex justify-content-end">
+
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
+          <hr>
+          <div class="row res-item pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/my-lib-3.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5">
+              <div class="row d-flex">
+                <p class="body-sm-blk px-2 py-1 ml-2 mr-1 rsc-tag">#Figma</p>
+                <p class="body-sm-blk px-2 py-1 ml-2 mr-1 rsc-tag">#Prototyping</p>
+              </div>
+              <p class="cal-subhead pb-4">Figma Prototypes: A Quick, Step-by-Step Guide</p>
+              <div class="row mt-3">
+                <a href="" class="contributor-link pl-3">Course Materials</a>
+              </div>
+              <p class="res-specs">4m Video</p>
+            </div>
+            <div class="col-1 d-flex justify-content-end">
+              <input type="checkbox" class="icon flag mr-2 mb-5">
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
+          <hr>
+          <div class="row pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/my-lib-4.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5">
+              <div class="row d-flex">
+                <p class="body-sm-blk px-2 py-1 ml-2 mr-1 rsc-tag">#Prototyping</p>
+              </div>
+              <p class="cal-subhead pb-3">Mobile Prototyping: Designing Interactions</p>
+              <div class="row d-flex mt-3">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/person.png" class="contributor-img mx-3" alt="person icon in blue circle">
+                <a href="" class="contributor-link my-auto">Kaylen Hou</a>
+              </div>
+              <p class="res-specs">10m Read</p>
+            </div>
+            <div class="col-1 d-flex justify-content-end">
+              <input type="checkbox" class="icon flag mr-2 mb-5">
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
         </div>
-        <div class="row filter-drop">
-          <select class="filter-brand">
-            <option value="0" selected>Type</option>
-            <option value="article">Article</option>
-            <option value="blog">Blog</option>
-            <option value="class-activity">Class Activity</option>
-            <option value="homework">Homework</option>
-            <option value="template">Template</option>
-            <option value="tutorial">Tutorial</option>
-            <option value="video">Video</option>
-          </select>
+        <!--Course-->
+        <div class="tab-pane container fade" id="course">
+          <p class="cal-subhead pt-5 pr-5 mr-3">Search by Lesson</p>
+          <div class="row d-flex pl-3 mb-3">
+            <div class="input-group search-resources d-flex py-2 mb-4">
+              <img src="images/search.svg" alt="magnifying glass" class="icon-m">
+              <input class="search" type="search" placeholder="Enter lesson number" aria-label="Search">
+            </div>
+            <div>
+            </div>
+          </div>
+          <div id="accordion">
+            <div class="card mb-3">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Week 10
+                    <img class="icon-sm pl-4 rotate chev" src="images/chev-down.svg" alt="downward-facing chevron">
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <div id="accordion1">
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading1-1">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1-1"
+                            aria-expanded="false" aria-controls="collapse1-1">
+                            Slides
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse1-1" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">10.1 Fundamentals of Interaction Design</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">10.2 Atomic Design</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">10.3 Components Plus Libraries</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading1-2">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1-2"
+                            aria-expanded="false" aria-controls="collapse1-2">
+                            Activities
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse1-2" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Dimensions of Interaction</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Capture Interaction Design</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Micro-Interaction Prototyping</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading1-3">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1-3"
+                            aria-expanded="false" aria-controls="collapse1-3">
+                            Homework
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse1-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Unit 10 Homework Instructions</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Unit 10 Resources</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading1-4">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1-4"
+                            aria-expanded="false" aria-controls="collapse1-4">
+                            Videos
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse1-4" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">10.1 Class Zoom Recording</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">10.2 Class Zoom Recording</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">10.3 Class Zoom Recording</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    Week 11
+                    <img class="icon-sm pl-4 rotate chev" src="images/chev-down.svg" alt="downward-facing chevron">
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <div id="accordion2">
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading2-1">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2-1"
+                            aria-expanded="false" aria-controls="collapse2-1">
+                            Slides
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse2-1" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">11.1 Responsive Web Design and UI Testing</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">11.2 RWD Rules and A/B Testing</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">11.3 Mobile First and Developer Handoff</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading2-2">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2-2"
+                            aria-expanded="false" aria-controls="collapse2-2">
+                            Activities
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse2-2" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">RWD Layout Challenge</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">RWD Test</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">RWD Landing Page Challenge</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading2-3">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2-3"
+                            aria-expanded="false" aria-controls="collapse4-3">
+                            Homework
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse2-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Unit 11/12 Homework Instructions</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading2-4">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2-4"
+                            aria-expanded="false" aria-controls="collapse2-4">
+                            Videos
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse2-4" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">11.1 Class Zoom Recording</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">11.2 Class Zoom Recording</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">11.3 Class Zoom Recording</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    Week 12
+                    <img class="icon-sm pl-4 rotate chev" src="images/chev-down.svg" alt="downward-facing chevron">
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <div id="accordion3">
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading3-1">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3-1"
+                            aria-expanded="false" aria-controls="collapse3-1">
+                            Slides
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse3-1" class="collapse" aria-labelledby="headingThree" data-parent="#accordion3">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">12.3 UI Interaction Design + Testing</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">12.2 AR + Smartwatch IxD</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">12.3 Advanced Multimodel Prototyping</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading3-2">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3-2"
+                            aria-expanded="false" aria-controls="collapse3-2">
+                            Activities
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse3-2" class="collapse" aria-labelledby="headingThree" data-parent="#accordion3">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Augmented Reality Prototype</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Smart Watch Prototype</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Multimodal Clickable Prototype Challenge</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading3-3">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3-3"
+                            aria-expanded="false" aria-controls="collapse3-3">
+                            Homework
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse3-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion3">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Unit 12 Resources</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading3-4">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3-4"
+                            aria-expanded="false" aria-controls="collapse3-4">
+                            Videos
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse3-4" class="collapse" aria-labelledby="headingThree" data-parent="#accordion3">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">12.1 Class Zoom Recording</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">12.2 Class Zoom Recording</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">12.3 Class Zoom Recording</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="headingFour">
+                <h5>
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="false" aria-controls="collapseFour">
+                    Week 13
+                    <img class="icon-sm pl-4 rotate chev" src="images/chev-down.svg" alt="downward-facing chevron">
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <div id="accordion4">
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading4-1">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4-1"
+                            aria-expanded="false" aria-controls="collapse4-1">
+                            Slides
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse4-1" class="collapse" aria-labelledby="headingThree" data-parent="#accordion4">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Welcome to Group Project II</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Group Project II, Day 2</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Group Project II, Day 3</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading4-2">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4-2"
+                            aria-expanded="false" aria-controls="collapse4-2">
+                            Activities
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse4-2" class="collapse" aria-labelledby="headingThree" data-parent="#accordion4">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Group Project 2 Proposal</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Group Project 2 Presentation Outline Template</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Group Project 2 UI Requirements Doc</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading4-3">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4-3"
+                            aria-expanded="false" aria-controls="collapse4-3">
+                            Homework
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse4-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion4">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/pdf-icon.svg" alt="pdf icon" class="icon-sm"></th>
+                                <td class="body-m">Unit 15 Homework Instructions</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-header" id="subheading4-4">
+                        <h5>
+                          <img class="icon pl-4" src="images/folder.svg" alt="grey folder icon">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4-4"
+                            aria-expanded="false" aria-controls="collapse4-4">
+                            Videos
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapse4-4" class="collapse" aria-labelledby="headingThree" data-parent="#accordion4">
+                        <div class="card-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">13.1 Class Zoom Recording</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">13.2 Class Zoom Recording</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="images/video.svg" alt="video icon" class="icon"></th>
+                                <td class="body-m">13.3 Class Zoom Recording</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row filter-drop mt-2">
-          <select class="filter-brand">
-            <option value="0" selected>Class</option>
-            <option value="empathize">Empathize</option>
-            <option value="define">Define</option>
-            <option value="ideate">Ideate</option>
-            <option value="prototype">Prototype</option>
-            <option value="test">Test</option>
-            <option value="code">Code</option>
-          </select>
+        <!--Shared-->
+        <div class="tab-pane container fade" id="shared">
+          <p class="cal-subhead pt-5">Search by Lesson</p>
+          <div class="input-group search-resources search-b d-flex py-1 mb-4">
+            <img src="images/search-blk.svg" alt="magnifying glass" class="icon-m">
+            <input class="search" type="search" placeholder="Enter a tag name" aria-label="Search">
+          </div>
+          <p class="cal-subhead pt-3">Most popular tags</p>
+          <div class="d-flex flex-wrap">
+            <div class="d-flex tag p-3 m-2 tag-purp">
+              <p class="body-m my-auto">#Figma</p>
+              <img src="images/x.svg" alt="x" class="ml-1 my-auto icon-m">
+            </div>
+            <div class="d-flex tag p-3 m-2 tag-purp">
+              <p class="body-m my-auto">#Prototyping</p>
+              <img src="images/x.svg" alt="x" class="ml-1 my-auto icon-m">
+            </div>
+            <div class="d-flex tag p-3 m-2 tag-grey">
+              <p class="body-m-blk my-auto">#Taskflow</p>
+            </div>
+            <div class="d-flex tag p-3 m-2 tag-grey">
+              <p class="body-m-blk my-auto">#Storyboarding</p>
+            </div>
+            <div class="d-flex tag p-3 m-2 tag-grey">
+              <p class="body-m-blk my-auto">#HTML</p>
+            </div>
+            <div class="d-flex tag p-3 m-2 tag-grey">
+              <p class="body-m-blk my-auto">#CaseStudy</p>
+            </div>
+            <div class="d-flex tag p-3 m-2 tag-grey">
+              <p class="d-flex body-m-blk my-auto">#CSS</p>
+            </div>
+            <div class="d-flex tag p-3 m-2 tag-grey">
+              <p class="body-m-blk my-auto">#Responsive</p>
+            </div>
+            <div class="d-flex tag p-3 m-2 tag-grey">
+              <p class="body-m-blk my-auto">#Analytics</p>
+            </div>
+            <div class="d-flex tag p-3 m-2 tag-grey">
+              <p class="body-m-blk my-auto">#Sitemap</p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-between mt-2 p-3 mb-4">
+            <p class="right-subhead">100 results</p>
+            <div class="d-flex my-auto mr-3">
+              <p class="cal-subhead pr-4 my-auto">Sort by:</p>
+              <div class="row filter-drop community-sort">
+                <select class="filter-brand">
+                  <option value="0" selected>Newest</option>
+                  <option value="type">Most Saves</option>
+                  <option value="session">Most Popular</option>
+                  <option value="topic">Relevance</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row res-item pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/sugg-2.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5 pr-5">
+              <p class="cal-subhead pb-4">Prototype While You Design,<br> and Vice Versa</p>
+              <div class="row d-flex mt-4">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/person.png" class="contributor-img mx-3" alt="white person icon on blue background">
+                <a href="" class="contributor-link my-auto">Justin Fogel</a>
+              </div>
+              <p class="res-specs">7m read</p>
+            </div>
+            <div class="col-1 ml-5 d-flex justify-content-end">
+              <input type="checkbox" class="icon flag mr-2 mb-5">
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
+          <hr>
+          <div class="row res-item pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/sugg-3.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5">
+              <p class="cal-subhead pb-4">Responsible Web Design: Creating<br> Flexible Websites</p>
+              <div class="row d-flex mt-4">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/adam.png" class="contributor-img mx-3" alt="profile picture of man on scooter">
+                <a href="" class="contributor-link my-auto">Adam Wiatros</a>
+              </div>
+              <p class="res-specs">4m Video</p>
+            </div>
+            <div class="col-1 d-flex justify-content-end">
+
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
+          <hr>
+          <div class="row pl-4 mt-4">
+            <div class="col-3 ml-1" id="rec-1">
+              <img src="images/sugg-4.png" class="resource-img pb-4">
+            </div>
+            <div class="col ml-5 pl-5">
+              <p class="cal-subhead pb-3">Figma Basics<br> and UI/UX Design</p>
+              <div class="row d-flex mt-4">
+                <p class="res-specs pl-3 my-auto">by:</p>
+                <img src="images/ben.png" class="contributor-img mx-3" alt="profile picture of man eating sandwich">
+                <a href="" class="contributor-link my-auto">Ben Hait</a>
+              </div>
+              <p class="res-specs">4m Video</p>
+            </div>
+            <div class="col-1 d-flex justify-content-end">
+
+              <img class="vert-elipses mt-3 mr-4" src="images/vert-elipses.svg">
+            </div>
+          </div>
         </div>
-        <div class="row filter-drop mt-2">
-          <select class="filter-brand">
-            <option value="0" selected>Create New Filter</option>
-            <option value="o1">Option 1</option>
-            <option value="o2">Option 1</option>
-            <option value="o3">Option 3</option>
-          </select>
-        </div>
-        <div class="row filter-toggle mt-4">
-          <p>Suggested<br>Resources</p>
-          <label class="switch mt-2">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <div class="row mt-4">
-          <button class="filter-search">Search</button>
+        <!--Add-->
+        <div class="tab-pane container fade" id="add">
+          <form class="p-3">
+            <div class="row form-group d-flex my-4">
+              <label class="right-subhead pr-2">Title</label>
+              <div class="input-group search-resources title-input d-flex py-2 h-24 pb-4 ml-4">
+                <input class="search add-item" type="text" placeholder="Paste URL here" aria-label="Text">
+              </div>
+            </div>
+            <div class="row form-group d-flex">
+              <img src="images/link.svg" alt="chain links" class="icon pr-2">
+              <div class="input-group search-resources d-flex py-2 h-24 pb-4 ml-4">
+                <input class="search add-item" type="text" placeholder="Paste URL here" aria-label="Text">
+              </div>
+            </div>
+            <div class="row pt-5 pl-5 d-flex justify-content-between">
+              <div class="col">
+                <p class="cal-subhead">Type</p>
+                <div class="row pl-4">
+                  <div class="col">
+                    <label class="container body-m">
+                      <input type="checkbox">
+                      <span class="checkmark pr-2"></span>
+                      video
+                    </label>
+                    <label class="container body-m">
+                      <input type="checkbox">
+                      <span class="checkmark pr-2"></span>
+                      link
+                    </label>
+                    <label class="container body-m">
+                      <input type="checkbox">
+                      <span class="checkmark pr-2"></span>
+                      .doc/docx
+                    </label>
+                  </div>
+                  <div class="col">
+                    <label class="container body-m">
+                      <input type="checkbox">
+                      <span class="checkmark pr-2"></span>
+                      slides
+                    </label>
+                    <label class="container body-m">
+                      <input type="checkbox">
+                      <span class="checkmark pr-2"></span>
+                      .pdf
+                    </label>
+                    <label class="container body-m">
+                      <input type="checkbox">
+                      <span class="checkmark pr-2"></span>
+                      template
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <p class="cal-subhead">Topic</p>
+                <div class="input-group search-resources d-flex py-1 mb-4">
+                  <img src="images/search.svg" alt="magnifying glass" class="icon-m">
+                  <input class="search" type="search" placeholder="Filter by tags" aria-label="Search">
+                </div>
+                <div class="row d-flex ml-1">
+                  <div class="d-flex p-2 mr-1 sm-tag">
+                    <img src="images/sm-x-blk.svg" class="icon-sm mr-1">
+                    <p class="body-sm-blk my-auto">Color</p>
+                  </div>
+                  <div class="d-flex p-2 mr-1 sm-tag">
+                    <img src="images/sm-x-blk.svg" class="icon-sm mr-1">
+                    <p class="body-sm-blk my-auto">Accessibility</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sort-filter d-flex">
+              <p class="body-m mt-2 pt-5 pr-5">Sort by:</p>
+              <div class="row filter-drop mt-5 mr-4">
+                <select class="filter-brand">
+                  <option value="0">Select Unit</option>
+                  <option value="research">User Research</option>
+                  <option value="def-ideation">Definition & Ideation</option>
+                  <option value="prototype-test">Paper Prototyping & Testing</option>
+                  <option value="iOS">iOS Prototyping & Testing</option>
+                  <option value="Design-Analysis">UI Design Analysis</option>
+                  <option value="navigation">UI Navigation Analysis, Sitemap, & Navigation Design</option>
+                  <option value="Portfolio">UX Design Portfolio & Job Prep</option>
+                  <option value="html-css">HTML & CSS</option>
+                  <option value="jquery">jQuery</option>
+                  <option value="bootstrap">Bootstrap</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group comment-box mt-4 pt-1 mx-4">
+              <label for="comment" class="cal-subhead ml-2 pt-1 pl-2">Description/Comments</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div class="row d-flex justify-content-between mt-5 pt-5 mr-5 pb-5">
+              <p class="right-subhead mr-5 pr-5 mx-auto">Save to My Library</p>
+              <div class="row switchbox-save pt-4 mt-1 pl-5">
+                <div class="row filter-toggle">
+                  <label class="switch mt-2">
+                    <input type="checkbox">
+                    <span class="slider-2 round slide-save"></span>
+                  </label>
+                </div>
+              </div>
+              <button class="px-5 py-2 body-sm-blk res-save mr-5 mx-auto">Save</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+    <!--Right Sidebar-->
+    <div class="col-lg-3 col-md-12 right-sidebar px-4">
+      <div class="row right-icons mb-5 mt-4 mr-3 d-none d-xl-flex justify-content-between">
+        <img src="images/alert.svg" class="icon py-auto my-auto pr-4 ml-4 mr-4" alt="bell with red dot in top right">
+        <img src="images/profile.png" class="profile py-auto my-auto" alt="round image of smiling woman">
+        <p class="cal-subhead py-auto my-auto">Joan Gingham</p>
+        <img src="images/chev-down.svg" class="icon-sm chev-down py-auto my-auto mr-4" alt="downard-pointing chevron">
+      </div>
+      <div class="row calendar cal-month d-none d-xl-flex justify-content-between" id="cal-a">
+        <div class="d-flex">
+          <p class="ml-4 mb-2 right-subhead">March 2022</p>
+          <img src="images/chev-right.svg" class="side-icon icon-chev mb-3 pl-4" alt="right-facing chevron">
+        </div>
+        <img src="images/plus.svg" class="icon mr-5" alt="whie plus sign in blue square">
+        <table class="table table-borderless mx-5">
+          <thead>
+            <tr>
+              <td scope="col" class="pb-3 wkday">Sun</th>
+              <td scope="col" class="pb-3 wkday">Mon</th>
+              <td scope="col" class="pb-3 wkday">Tue</th>
+              <td scope="col" class="pb-3 wkday">Wed</th>
+              <td scope="col" class="pb-3 wkday">Thu</th>
+              <td scope="col" class="pb-3 wkday">Fri</th>
+              <td scope="col" class="pb-3 wkday">Sat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" class="not-march">27</th>
+              <td class="not-march">28</td>
+              <td class="march">1</td>
+              <td class="march">2<br></td>
+              <td class="march">3</td>
+              <td class="march">4</td>
+              <td class="march">5<br></td>
+            </tr>
+            <tr>
+              <td scope="row" class="march">6</th>
+              <td class="march">7<br></td>
+              <td class="march">8</td>
+              <td class="march">9<br></td>
+              <td class="march">10</td>
+              <td class="march">11</td>
+              <td class="march">12<br></td>
+            </tr>
+            <tr>
+              <td scope="row" class="march">13</th>
+              <td class="mx-auto d-flex justify-content-center p-1 this-day">
+                <div class="march-14 ml-1">14</div>
+              </td>
+              <td class="march">15</td>
+              <td class="march">16</td>
+              <td class="march">17</td>
+              <td class="march">18</td>
+              <td class="march">19</td>
+            </tr>
+            <tr>
+              <td scope="row" class="march">20</th>
+              <td class="march">21</td>
+              <td class="march">22</td>
+              <td class="march">23</td>
+              <td class="march">24</td>
+              <td class="march">25</td>
+              <td class="march">26</td>
+            </tr>
+            <tr>
+              <td scope="row" class="march">27</th>
+              <td class="march">28</td>
+              <td class="march">29</td>
+              <td class="march">30</td>
+              <td class="march">31</td>
+              <td class="not-march">1</td>
+              <td class="not-march">2</td>
+            </tr>
+            <tr>
+              <td scope="row" class="not-march">3</th>
+              <td class="not-march">4</td>
+              <td class="not-march">5</td>
+              <td class="not-march">6</td>
+              <td class="not-march">7</td>
+              <td class="not-march">8</td>
+              <td class="not-march">9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="body right-subhead mt-5">Timeline</p>
+      <div class="row time-task p-2 mx-2 d-flex justify-content-between" id="task-1">
+        <p class="body-m-blk mb-2 py-1">Session 24.3 Final Group Project Due</p>
+        <p class="body-sm-blk mb-1">Monday March 14th, 6:30 PM</p>
+        <img src="images/elipses-black.svg" alt="elipses" class="elipses mr-2 mt-auto mb-auto">
+      </div>
+      <div class="row time-task p-2 mx-2 my-2 d-flex justify-content-between" id="task-2">
+        <p class="body-m mb-2 py-1">Session 24.2 FE Dev Homework Due</p>
+        <p class="body-sm mb-1">Saturday March 18th, 10:00 AM</p>
+        <img src="images/elipses-white.svg" alt="elipses" class="elipses mr-2 mt-auto mb-auto">
+      </div>
+      <div class="row time-task p-2 mx-2 d-flex justify-content-between" id="task-3">
+        <p class="body-m mb-2 py-1">Career Milestone 3: Resume Review Due</p>
+        <p class="body-sm mb-1">Monday March 21st, 6:30 PM</p>
+        <img src="images/elipses-white.svg" alt="elipses" class="elipses mr-2 mt-auto mb-auto">
+      </div>
+      <div class="row reminder-head d-flex mt-5 justify-content-between">
+        <p class="body right-subhead ml-4">Reminders</p>
+        <div class="d-flex all-reminders mb-auto mt-auto pb-0 mr-4">
+          <p class="body-sm pr-3 view-text">View all</p>
+          <img class="view-all" src="images/chev-right.svg" alt="right-pointing chevron">
+        </div>
+      </div>
+      <div class="row d-flex flex-column reminder-list mx-4 p-3">
+        <div class="row mb-2 d-flex">
+          <label class="container body-m">
+            <input type="checkbox">
+            <span class="checkmark  pr-2"></span>
+            Iterated on Mid-Fi Prototype
+          </label>
+        </div>
+        <div class="row mb-2 d-flex">
+          <label class="container body-m">
+            <input type="checkbox">
+            <span class="checkmark pr-2"></span>
+            Send user testing notes
+          </label>
+        </div>
+        <div class="row mb-2 d-flex">
+          <label class="container body-m">
+            <input type="checkbox">
+            <span class="checkmark pr-2"></span>
+            Submit resume to career services
+          </label>
+        </div>
+        <div class="row mb-2 d-flex">
+          <label class="container body-m">
+            <input type="checkbox" checked="checked">
+            <span class="checkmark  pr-2"></span>
+            Present final presentation
+          </label>
+        </div>
+        <div class="row d-flex justify-content-end mt-4">
+          <img src="images/plus.svg" class="icon" alt="white plus sign in blue box">
+          <p class="body-m my-auto">Add new</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <script src="/js/index.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <script src="/js/index.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
